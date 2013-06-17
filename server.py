@@ -10,11 +10,9 @@ cache = {}
 
 class Test(resource.Resource):
   def getChild(self, name, request):
-      print "--->getChild", name, request
       return self
 
   def render_GET(self, request):
-      print "--->render_GET"
       return '<html><body><form method="POST"><input name="the-field" type="text"/></form></body></html>'
 
   def render_POST(self, request):

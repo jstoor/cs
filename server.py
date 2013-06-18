@@ -50,8 +50,8 @@ class Csv(resource.Resource):
 
 def main():
   root=Root()
-  root.putChild('HTML', Html())
-  root.putChild('CSV', Csv())
+  root.putChild('html', Html())
+  root.putChild('csv', Csv())
   reactor.listenTCP(8000, server.Site(root))
   reactor.run()
 

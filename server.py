@@ -10,6 +10,9 @@ from json import loads
 # Perhaps look at "sAsync"
 Cache = {}
 
+# TODO : Need to understand how to support multiple GET/POST requests
+# using the Twisted framework.
+
 class Root(resource.Resource):
 
   def getChild(self, name, request):

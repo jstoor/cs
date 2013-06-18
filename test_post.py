@@ -5,7 +5,7 @@ from datetime import datetime
 import simplejson
 
 
-TESTDATA = { 'data' : { "data1": "a1", "data2": "a2" } }
+TESTDATA = { 'data' : '{ "data3": "a3", "data4": "a4" }' }
 
 URL = 'http://localhost:8000'
 
